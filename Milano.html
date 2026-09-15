@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Tugas HTML</title>
+    
 </head>
 
 <body>
 
 ```
-<h1>Milanoooooooooooooooo</h1>
+<font size="4">
+<h1 style="text-align: center;">Milano's</h1>
+</font>
+<center>
+    <font face = "Times New Roman" color = "black" >
+    <p> <b>“保持饥渴，保持愚蠢。用代码改变生活。”</b>
+    </p>
+    </font>
+</center>
+<hr size="5" color="black">
 
-<p>
-    Saya sedang belajar
-    <i>HTML</i> untuk membuat website.
-</p>
-
-<h2>Tentang Saya</h2>
-
+<h2 style="text-align: center;">"INTRODUCTION"</h2>
+<center>
+    <font face = "Times New Roman" color = "black" >
+    <p> <b>“Nǐ hǎo! Wǒ shì Milano. Wǒ shì yī míng rèzhōng yú Web kāifā de zhuānyè xuéshēng. Wǒ xǐhuān tànsuǒ xīn jìshù, bìng tōngguò dàimǎ lái biǎodá wǒ de chuàngyì yǔ xiǎngfǎ.”</b>
+    </p>
+    </font>
+</center>
 <p style="text-align: left;">
     paragraf rata kiri.
 </p>
-
-<p style="text-align: center;">
-    paragraf rata tengah.
-</p>
-
-<p style="text-align: right;">
-    paragraf rata kanan.
 </p>
 
 <h3>Formatting Teks</h3>
@@ -74,6 +77,106 @@
     src="Gambar/ADMIN.png" alt="ADMIN" width="400">
 "
 >
+```
+```
+<hr>
+
+<h2>Jadwal Kegiatan</h2>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th>Hari</th>
+        <th>Kegiatan</th>
+        <th>Waktu</th>
+    </tr>
+
+    <tr>
+        <td>Senin</td>
+        <td>Belajar</td>
+        <td>08.00 - 12.00</td>
+    </tr>
+
+    <tr>
+        <td>Selasa</td>
+        <td>Mengerjakan tugas</td>
+        <td>13.00 - 15.00</td>
+    </tr>
+
+    <tr>
+        <td>Rabu</td>
+        <td>Belajar HTML</td>
+        <td>19.00 - 21.00</td>
+    </tr>
+</table>
+
+<h2>Formulir Perkenalan</h2>
+
+<form>
+    <label for="nama">Nama:</label>
+    <br>
+    <input type="text" id="nama" name="nama">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <label for="tanggal">Tanggal Lahir:</label>
+    <br>
+    <input type="date" id="tanggal" name="tanggal">
+    <br><br>
+
+    <label for="hobi">Hobi:</label>
+    <br>
+    <select id="hobi" name="hobi">
+        <option value="musik">Mendengarkan musik</option>
+        <option value="game">Bermain game</option>
+        <option value="olahraga">Olahraga</option>
+        <option value="membaca">Membaca</option>
+    </select>
+    <br><br>
+
+    <label>Jenis Kelamin:</label>
+    <br>
+    <input type="radio" name="gender" value="laki-laki">
+    Laki-laki
+
+    <input type="radio" name="gender" value="perempuan">
+    Perempuan
+
+    <br><br>
+
+    <label>Hobi:</label>
+    <br>
+    <input type="checkbox" name="hobi" value="musik">
+    Musik
+
+    <input type="checkbox" name="hobi" value="game">
+    Game
+
+    <input type="checkbox" name="hobi" value="olahraga">
+    Olahraga
+
+    <br><br>
+
+    <label for="pesan">Pesan:</label>
+    <br>
+    <textarea id="pesan" name="pesan" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Kirim">
+    <input type="reset" value="Reset">
+</form>
+
+<hr>
+
+<footer>
+    <p>
+        &copy; 2026 Anozz. Dibuat untuk tugas HTML dan Git.
+    </p>
+</footer>
 ```
 
 </body>
