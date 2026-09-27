@@ -1,176 +1,519 @@
 <!DOCTYPE html>
-
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <title>Tugas HTML</title>
-    
+
+    <!-- Agar tampilan responsive di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Milano</title>
+
+    <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<font size="4">
-<h1 style="text-align: center;">Milano's</h1>
-</font>
-<center>
-    <font face = "Times New Roman" color = "black" >
-    <p> <b>“保持饥渴，保持愚蠢。用代码改变生活。”</b>
-    </p>
-    </font>
-</center>
-<hr size="5" color="black">
 
-<h2 style="text-align: center;">INTRODUCTION</h2>
-<center>
-    <font face = "Times New Roman" color = "black" >
-    <p> <b>“Nǐ hǎo! Wǒ shì Milano. Wǒ shì yī míng rèzhōng yú Web kāifā de zhuānyè xuéshēng. Wǒ xǐhuān tànsuǒ xīn jìshù, bìng tōngguò dàimǎ lái biǎodá wǒ de chuàngyì yǔ xiǎngfǎ.”</b>
-    </p>
-    </font>
-</center>
-<p style="text-align: left;">
-    paragraf rata kiri.
-</p>
-</p>
+    <!-- ================= HEADER ================= -->
+    <header>
 
-<h3>Formatting Teks</h3>
+        <div class="header-content">
 
-<p>
-    <b>Teks tebal</b>
-    <br>
-    <i>Teks miring</i>
-    <br>
-    <u>Teks bergaris bawah</u>
-    <br>
-    <span style="color: red;">Teks warna merah</span>
-</p>
+            <div class="header-text">
+                <p class="sapaan">WELCOME TO</p>
 
-<h3>Hobi Saya</h3>
+                <h1>Milanoz </h1>
 
-<ul>
-    <li>Mendengarkan musik</li>
-    <li>Bermain game</li>
-    <li>Menonton film</li>
-    <li>Belajar</li>
-</ul>
+                <p class="subtitle">
+                    Mahasiswa | Web Programming | Technology
+                </p>
+            </div>
 
-<h3>Target Belajar</h3>
+        </div>
 
-<ol>
-    <li>Menguasai HTML</li>
-    <li>Menguasai CSS</li>
-    <li>Mempelajari JavaScript</li>
-</ol>
+    </header>
 
-<h3>Link</h3>
 
-<p>
-    Saya bisa mencari informasi melalui
-    <a href="https://www.google.com">
-        Google
-    </a>
-</p>
+    <!-- ================= NAVBAR ================= -->
+    <nav>
 
-<h3>Gambar</h3>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#hobi">Hobi</a>
+        <a href="#kontak">Kontak</a>
 
-<img
-    src="Gambar/ADMIN.png" alt="ADMIN" width="400">
-<hr>
+    </nav>
 
-<h2>Jadwal Kegiatan</h2>
 
-<table border="1" cellpadding="10" cellspacing="0">
-    <tr>
-        <th>Hari</th>
-        <th>Kegiatan</th>
-        <th>Waktu</th>
-    </tr>
+    <!-- ================= MAIN ================= -->
+    <main>
 
-    <tr>
-        <td>Senin</td>
-        <td>Belajar</td>
-        <td>08.00 - 12.00</td>
-    </tr>
 
-    <tr>
-        <td>Selasa</td>
-        <td>Mengerjakan tugas</td>
-        <td>13.00 - 15.00</td>
-    </tr>
+        <!-- ================= PROFIL ================= -->
+        <section class="card profil-card" id="tentang">
 
-    <tr>
-        <td>Rabu</td>
-        <td>Belajar HTML</td>
-        <td>19.00 - 21.00</td>
-    </tr>
-</table>
+            <div class="profil">
 
-<h2>Formulir Perkenalan</h2>
+                <div class="foto-container">
+                    <img src="Gambar/ADMIN.png"
+                         alt="Foto Profil Milano">
+                </div>
 
-<form>
-    <label for="nama">Nama:</label>
-    <br>
-    <input type="text" id="nama" name="nama">
-    <br><br>
+                <div class="profil-text">
 
-    <label for="email">Email:</label>
-    <br>
-    <input type="email" id="email" name="email">
-    <br><br>
+                    <p class="label">TENTANG SAYA</p>
 
-    <label for="tanggal">Tanggal Lahir:</label>
-    <br>
-    <input type="date" id="tanggal" name="tanggal">
-    <br><br>
+                    <h2>Halo, Saya Milano!</h2>
 
-    <label for="hobi">Hobi:</label>
-    <br>
-    <select id="hobi" name="hobi">
-        <option value="musik">Mendengarkan musik</option>
-        <option value="game">Bermain game</option>
-        <option value="olahraga">Olahraga</option>
-        <option value="membaca">Membaca</option>
-    </select>
-    <br><br>
+                    <p>
+                        Halo, nama saya <strong>Milano</strong>.
+                        Saya adalah seorang mahasiswa yang sedang
+                        mempelajari berbagai hal di bidang teknologi
+                        informasi, khususnya Pemrograman Berbasis Web.
+                    </p>
 
-    <label>Jenis Kelamin:</label>
-    <br>
-    <input type="radio" name="gender" value="laki-laki">
-    Laki-laki
+                    <p>
+                        Saat ini saya sedang belajar membuat website
+                        menggunakan HTML dan CSS. Melalui tugas ini,
+                        saya belajar bagaimana membuat halaman website
+                        yang tidak hanya memiliki struktur HTML,
+                        tetapi juga memiliki tampilan yang menarik
+                        dan responsive.
+                    </p>
 
-    <input type="radio" name="gender" value="perempuan">
-    Perempuan
+                    <p class="quote">
+                        "Terus belajar, terus berkembang, dan jangan
+                        takut mencoba hal baru."
+                    </p>
+                    <p>
+                        CIHUYYYYYYYYYYYYYY
+                    </p>
 
-    <br><br>
+                </div>
 
-    <label>Hobi:</label>
-    <br>
-    <input type="checkbox" name="hobi" value="musik">
-    Musik
+            </div>
 
-    <input type="checkbox" name="hobi" value="game">
-    Game
+        </section>
 
-    <input type="checkbox" name="hobi" value="olahraga">
-    Olahraga
 
-    <br><br>
+        <!-- ================= KELEBIHAN ================= -->
+        <section class="card">
 
-    <label for="pesan">Pesan:</label>
-    <br>
-    <textarea id="pesan" name="pesan" rows="5" cols="40"></textarea>
+            <p class="label">MY PROFILE</p>
 
-    <br><br>
+            <h2>Beberapa Hal Tentang Saya</h2>
 
-    <input type="submit" value="Kirim">
-    <input type="reset" value="Reset">
-</form>
+            <div class="info-grid">
 
-<hr>
+                <div class="info-box">
+                    <span class="icon">💻</span>
+                    <h3>Teknologi</h3>
+                    <p>
+                        Tertarik mempelajari teknologi dan
+                        pemrograman.
+                    </p>
+                </div>
 
-<footer>
-    <p>
-        &copy; 2026 Anozz. Dibuat untuk tugas HTML dan Git.
-    </p>
-</footer>
+                <div class="info-box">
+                    <span class="icon">📚</span>
+                    <h3>Belajar</h3>
+                    <p>
+                        Senang mempelajari hal-hal baru
+                        untuk menambah pengetahuan.
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <span class="icon">🎯</span>
+                    <h3>Tujuan</h3>
+                    <p>
+                        Terus meningkatkan kemampuan dan
+                        pengalaman di bidang teknologi.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PENDIDIKAN ================= -->
+        <section class="card" id="pendidikan">
+
+            <p class="label">EDUCATION</p>
+
+            <h2>Pendidikan</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-number">
+                        1
+                    </div>
+
+                    <div>
+                        <h3>Pendidikan Saat Ini</h3>
+
+                        <p>
+                            Saat ini saya sedang menempuh pendidikan
+                            di perguruan tinggi dan mempelajari
+                            berbagai materi mengenai teknologi
+                            informasi.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-number">
+                        2
+                    </div>
+
+                    <div>
+                        <h3>Pemrograman Berbasis Web</h3>
+
+                        <p>
+                            Salah satu materi yang sedang dipelajari
+                            adalah Pemrograman Berbasis Web, termasuk
+                            HTML, CSS, dan teknologi web lainnya.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOBI ================= -->
+        <section class="card" id="hobi">
+
+            <p class="label">MY HOBBIES</p>
+
+            <h2>Hobi Saya</h2>
+
+            <p>
+                Beberapa kegiatan yang saya sukai ketika memiliki
+                waktu luang antara lain:
+            </p>
+
+
+            <!-- GRID -->
+            <div class="hobi-grid">
+
+                <div class="hobi-item">
+
+                    <div class="hobi-icon">
+                        🎮
+                    </div>
+
+                    <h3>Bermain Game</h3>
+
+                    <p>
+                        Bermain game sebagai hiburan
+                        ketika memiliki waktu luang.
+                    </p>
+
+                </div>
+
+
+                <div class="hobi-item">
+
+                    <div class="hobi-icon">
+                        🎵
+                    </div>
+
+                    <h3>Mendengarkan Musik</h3>
+
+                    <p>
+                        Mendengarkan musik untuk
+                        menemani aktivitas sehari-hari.
+                    </p>
+
+                </div>
+
+
+                <div class="hobi-item">
+
+                    <div class="hobi-icon">
+                        🎬
+                    </div>
+
+                    <h3>Menonton Film</h3>
+
+                    <p>
+                        Menonton film untuk hiburan
+                        dan mengisi waktu luang.
+                    </p>
+
+                </div>
+
+
+                <div class="hobi-item">
+
+                    <div class="hobi-icon">
+                        💻
+                    </div>
+
+                    <h3>Belajar Coding</h3>
+
+                    <p>
+                        Mencoba membuat program dan
+                        mempelajari bahasa pemrograman.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DAFTAR ================= -->
+        <section class="card">
+
+            <p class="label">MY ACTIVITIES</p>
+
+            <h2>Aktivitas yang Sedang Dipelajari</h2>
+
+
+            <div class="list-container">
+
+                <div>
+
+                    <h3>Materi yang Dipelajari</h3>
+
+                    <ul>
+
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>Python</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Target Belajar</h3>
+
+                    <ol>
+
+                        <li>Memahami HTML</li>
+                        <li>Menguasai CSS</li>
+                        <li>Membuat website</li>
+                        <li>Meningkatkan kemampuan coding</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TABEL ================= -->
+        <section class="card">
+
+            <p class="label">MY SCHEDULE</p>
+
+            <h2>Jadwal Kegiatan</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>Hari</th>
+                            <th>Kegiatan</th>
+                            <th>Keterangan</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Senin</td>
+                            <td>Kuliah</td>
+                            <td>Belajar di kampus</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Selasa</td>
+                            <td>Praktikum</td>
+                            <td>Praktik pemrograman</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Rabu</td>
+                            <td>Belajar</td>
+                            <td>Mengerjakan tugas</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Kamis</td>
+                            <td>Kuliah</td>
+                            <td>Mengikuti perkuliahan</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORM ================= -->
+        <section class="card" id="kontak">
+
+            <p class="label">CONTACT</p>
+
+            <h2>Hubungi Saya</h2>
+
+            <p>
+                Jika ingin memberikan pesan atau saran,
+                silakan isi form berikut.
+            </p>
+
+
+            <form>
+
+                <div class="form-group">
+
+                    <label for="nama">
+                        Nama
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama kamu"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email kamu"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="pesan">
+                        Pesan
+                    </label>
+
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="5"
+                        placeholder="Tulis pesan kamu..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="setuju"
+                    >
+
+                    <label for="setuju">
+                        Saya mengisi form dengan benar.
+                    </label>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button type="submit">
+                        Kirim
+                    </button>
+
+                    <button type="reset" class="reset-button">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= LINK ================= -->
+        <section class="card link-card">
+
+            <p class="label">SOCIAL MEDIA</p>
+
+            <h2>Temukan Saya di Internet</h2>
+
+            <p>
+                Kamu dapat mengunjungi
+                <a
+                    href="https://www.instagram.com/milanozz_18?stkn=aGRodGZqZG8xNjBo"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+                untuk melihat berbagai project dan
+                pembelajaran mengenai coding.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <h3>Profil Milano</h3>
+
+        <p>
+            Tugas 2 - Pemrograman Berbasis Web
+        </p>
+
+        <p>
+            &copy; 2026 Milano. All Rights Reserved.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
