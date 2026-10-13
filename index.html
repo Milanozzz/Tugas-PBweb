@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - JavaScript Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mengimpor Google Fonts untuk tipografi yang lebih modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Profil -->
+        <header class="profile-header">
+            <img src="foto.jpg" alt="Foto Profil" class="profile-foto" onerror="this.src='Sosok Misterius.png ';">
+            <div class="profile-info">
+                <h2>Albertus Christian Milano</h2>
+                <p>NIM: 255314133 | Tugas 4 - JavaScript</p>
+            </div>
+        </header>
+
+        <!-- Container Utama Form -->
+        <main class="card">
+            <div class="card-header">
+                <h1>Formulir Interaktif JavaScript</h1>
+                <p>Ikuti setiap tahapan pengisian data di bawah ini.</p>
+            </div>
+
+            <!-- Langkah 1: Input Nama dan Jumlah Pilihan -->
+            <section id="step-1" class="form-section">
+                <div class="input-group">
+                    <label for="nama">Nama Lengkap :</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda...">
+                </div>
+                <div class="input-group">
+                    <label for="jumlahPilihan">Jumlah Pilihan (Spinner) :</label>
+                    <input type="number" id="jumlahPilihan" min="1" max="10" placeholder="Contoh: 3">
+                </div>
+                <button class="btn-primary" onclick="prosesJumlahPilihan()">Selanjutnya &rarr;</button>
+            </section>
+
+            <!-- Langkah 2: Dinamis Input Teks Pilihan -->
+            <section id="step-2" class="form-section hidden">
+                <h3>Masukkan Teks Pilihan</h3>
+                <div id="container-pilihan" class="dynamic-inputs"></div>
+                <button class="btn-primary" onclick="prosesTeksPilihan()">Simpan Pilihan &rarr;</button>
+            </section>
+
+            <!-- Langkah 3: Pilih Radio Button -->
+            <section id="step-3" class="form-section hidden">
+                <h3>Pilih Salah Satu Opsi :</h3>
+                <div id="container-radio" class="radio-group-container"></div>
+                <button class="btn-primary" onclick="prosesPilihanRadio()">Konfirmasi Pilihan &rarr;</button>
+            </section>
+
+            <!-- Langkah 4: Input Email dengan Pattern Matching -->
+            <section id="step-4" class="form-section hidden">
+                <div class="input-group">
+                    <label for="email">Alamat Email :</label>
+                    <input type="email" id="email" placeholder="nama@domain.com">
+                </div>
+                <button class="btn-primary" onclick="prosesEmail()">Selesai & Lihat Hasil &rarr;</button>
+            </section>
+
+            <!-- Langkah 5: Output Akhir (DOM) -->
+            <section id="step-5" class="form-section hidden">
+                <div class="output-card">
+                    <h3>Hasil Ringkasan Data</h3>
+                    <div id="output-akhir" class="output-text"></div>
+                    <button class="btn-secondary" onclick="location.reload()">Ulangi Dari Awal</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
